@@ -1,0 +1,13 @@
+version: '3.8'
+
+services:
+  mcp-server:
+    image: youtubedownloadmcp:latest
+    environment:
+      - OUTPUT_DIR=output
+    volumes:
+      - /Users/keerapon.som/Desktop/Gem/Personal Gem/Road To Legendary Opensource Developer/youtube_download_mcp/output:/app/output
+
+networks:
+  mcp-network:
+    driver: bridge
