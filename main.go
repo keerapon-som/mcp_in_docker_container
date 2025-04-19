@@ -18,7 +18,9 @@ func main() {
 	}
 	// Load environment variables
 	outputDir := os.Getenv("OUTPUT_DIR")
+
 	fmt.Println("Output directory: ", outputDir)
+
 	youtubeDownload := youtubedownload.NewYTDownloader(outputDir)
 
 	s := mcp.NewMCPRouter(youtubeDownload)
